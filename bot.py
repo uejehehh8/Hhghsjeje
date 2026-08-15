@@ -5,8 +5,7 @@ from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, Con
 
 logging.basicConfig(level=logging.INFO)
 
-BOT_TOKEN = os.environ.get("8871651687:AAEiK318pI_B9ZOOK2jemks_F4Dn7aAJPVY")
-
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("أهلاً! أنا بوتك الجديد 🤖")
 
